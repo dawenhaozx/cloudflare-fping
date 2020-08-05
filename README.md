@@ -7,7 +7,8 @@
 Invoking `cfping.sh -h` prints usage information:
 
     $ cfping.sh -h
-    $ usage: cfping.sh -c [-p 2000] [-s 5] [-g 1] [-m 500]
+    $ usage: 
+    $      cfping.sh -c [-p 2000] [-s 5] [-g 1] [-m 500]
     $         -c     ping [fping] all cloudflare ips to find the best ip
     $         -p <x> sets the time in milliseconds that fping waits between successive
     $                packets to an individual target (default is 2000, minimum is 10)
@@ -20,7 +21,7 @@ Invoking `cfping.sh -h` prints usage information:
 
     ---
 
-    $ usage: cfping.sh -d [-L https://domain.com/xxx] [-N 100] [-P 10] [-I ip]
+    $     cfping.sh -d [-L https://domain.com/xxx] [-N 100] [-P 10] [-I ip]
     $         -d     speed test (default testing best 100 IPs unless -I used)
     $         -L <x> set the file link to test (default is a cloudflare worker link to a file on www.apple.com)
     $                the domain of this link must have cname record on cloudflare
@@ -30,7 +31,7 @@ Invoking `cfping.sh -h` prints usage information:
 
     ---
 
-    $ usage: cfping.sh [options] <start> <end>
+    $     cfping.sh [options] <start> <end>
     $         -n <x> set the number of addresses to print (<end> must not be set)
     $         -f <x> set the format of addresses (hex, dec, or dot)
     $         -i <x> set the increment to 'x'
@@ -63,6 +64,9 @@ mac / linux 测试通过
 ## Credits
 
 [fping](https://github.com/schweikert/fping)
+
 [prips.sh](https://github.com/honzahommer/prips.sh)
+
+[Inquirer.sh](https://github.com/tanhauhau/Inquirer.sh)
 
 © 2020 MTimer. MIT license.
